@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styleglobal.css">
+    <title>The FrontEnders</title>
+</head>
+  <style>
+
+    /*footer*/
+    footer {
+    text-align: middle;
+    padding: 5px;
+    background-color: rgba(36, 99, 113, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    min-height: 100px;
+  }
+    /*main*/
+    .conteudo {
+      border-top:0.4 solid;
+      margin-bottom: 48px;
+    }
+    .conteudoPrincipal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .conteudoPrincipal button {
+      background-color: #ff9100;
+      width: 55%;
+      height: 55px;
+      position: center;
+      border-radius: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+
+    }
+    button :hover{
+    background: red;
+    transition: 0.8s;
+
+}
+
+
+   </style>
+
+  
+<body>
+
+    <header class="cabecalhoCbl">
+
+        <!-- Logo da empresa -->
+        <div class="logoEmpresa">
+            <img src="imagens/The FrontEnders.png" alt="logo da empresa">
+        </div>
+
+        <!-- Imagem hamburgue para abrir o menu lateral -->
+        <div class="imgHamburgue">
+            <img src="imagens/menu.png" alt="Imagem Hamburgue" onclick="openNav()">
+        </div>
+
+        <!-- Menu de navegação do site -->
+        <nav class="navegacaoMenu" id="navegacaoId">
+            
+            <!-- Configuração do JavaScript para o Menu Lateral -->
+            <a href="javascript:void(0)" class="closebtn" id="closebtnId" onclick="closeNav()">&times;</a>
+
+            <a href="index.html">Home</a>
+            <a href="planos.html">Serviços</a>
+            <a href="nossocontato.html">Contato</a>
+            <a href="login.html">Login</a>
+            
+        </nav>
+
+    </header>
+
+           
+
+    <main class="conteudo">
+      <section class="conteudoPrincipal">
+        <div class="conteudoPrincipalEscrito">
+          <h1 class="conteudoPrincipalEscritoTitulo"> The FrontEnders</h1>
+          <h2 class="conteudoPrincipalEscritoTitulo2"> Nós do front enders oferecemos vários planos para você </h2>
+          <h2 class="conteudoPrincipalEscritoTitulo2"> Alcançar os seus sonhos de front end! </h2>
+          <br>
+          <h3 class="conteudoPrincipalEscritoTitulo3"> <h2>Clique para saber mais!</h2></h3>
+          <button><a href="planos.html">Venha ver nossos planos</a></button>
+      </div>
+      <img src="imagens/exemplosdesites.webp" height ="500">
+      </section>
+    </main>
+
+  </div>
+  <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+          <br>
+          <hr style="width:99%;text-align:left;margin-left:1">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg></a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jsglobal.js"></script>
+</body>
+</html>

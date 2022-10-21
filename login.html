@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/styleglobal.css">
+    <!-- css do Bootstrap  -->
+    <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>The FrontEnders</title>
+</head>
+
+<body>
+
+    <header class="cabecalhoCbl">
+
+        <!-- Logo da empresa -->
+        <div class="logoEmpresa">
+            <img src="imagens/The FrontEnders.png" alt="logo da empresa">
+        </div>
+
+        <!-- Imagem hamburgue para abrir o menu lateral -->
+        <div class="imgHamburgue">
+            <img src="imagens/menu.png" alt="Imagem Hamburgue" onclick="openNav()">
+        </div>
+
+        <!-- Menu de navegação do site -->
+        <nav class="navegacaoMenu" id="navegacaoId">
+
+            <!-- Configuração do JavaScript para o Menu Lateral -->
+            <a href="javascript:void(0)" class="closebtn" id="closebtnId" onclick="closeNav()">&times;</a>
+
+            <a href="index.html">Home</a>
+            <a href="planos.html">Serviços</a>
+            <a href="nossocontato.html">Contato</a>
+            <a href="login.html">Login</a>
+
+        </nav>
+
+    </header>
+
+    <main style="display: flex">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+
+        <div class="container">
+
+            <div class="row" style="margin-top:20px">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                    <form role="form">
+                        <fieldset>
+                            <h2>Faça Login</h2>
+                            <hr class="colorgraph">
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha">
+                            </div>
+                            <span class="button-checkbox">
+                                <button type="button" class="btn" data-color="info">Lembrar Senha</button>
+                                <input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
+                                <a href="" class="btn btn-link pull-right">Esqueceu sua senha?</a>
+                            </span>
+                            <hr class="colorgraph">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <input type="submit" class="btn btn-lg btn-success btn-block" value="Login">
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <a href="./cadastro.html" class="btn btn-lg btn-primary btn-block">Registre-se</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer>
+
+
+    </footer>
+
+    <script src="js/login.js"></script>
+    <script src="js/jsglobal.js"></script>
+</body>
+
+</html>

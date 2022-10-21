@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/styleglobal.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css">
+    <title>The FrontEnders</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.css" rel="stylesheet">
+  </head>
+    <header class="cabecalhoCbl">
+
+        <!-- Logo da empresa -->
+        <div class="logoEmpresa">
+            <img src="imagens/The FrontEnders.png" alt="logo da empresa">
+        </div>
+
+        <!-- Imagem hamburgue para abrir o menu lateral -->
+        <div class="imgHamburgue">
+            <img src="imagens/menu.png" alt="Imagem Hamburgue" onclick="openNav()">
+        </div>
+
+        <!-- Menu de navegação do site -->
+        <nav class="navegacaoMenu" id="navegacaoId">
+            
+            <!-- Configuração do JavaScript para o Menu Lateral -->
+            <a href="javascript:void(0)" class="closebtn" id="closebtnId" onclick="closeNav()">&times;</a>
+
+            <a href="index.html">Home</a>
+            <a href="planos.html">Serviços</a>
+            <a href="nossocontato.html">Contato</a>
+            <a href="login.html">Login</a>
+            
+        </nav>
+
+    </header>
+
+    <main>
+
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+  
+      <h2>Formulário de Cadastro</h2>
+      <p class="lead">Preencha os campos abaixo para se cadastrar em nosso site</p>
+    </div>
+      </div>
+
+      <div class="col-md-7 col-lg-8">
+       
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+               
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">E-mail <span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="email@email.com">
+              <div class="invalid-feedback">
+                
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="username" class="form-label">Nome de Usuário</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="nome de usuário" required>
+              <div class="invalid-feedback">
+                </div>
+              </div>
+            </div>
+
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Senha</label>
+                  <input type="text" class="form-control" id="Senha" placeholder="6 dígitos" value="" required>
+                  <div class="invalid-feedback">
+                   
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="confsenha" class="form-label">Confirmação de senha</label>
+                  <input type="text" class="form-control" id="senhaconf" required>
+                </div>
+    
+
+            <div class="col-12">
+              <label for="address" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="col-md-4">
+              <label for="state" class="form-label">Número</label>
+                <input type="text" class="form-control" id="cep">
+            </div>
+            <div class="col-md-4">
+              <label for="state" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="cep">
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="address">
+            </div>
+            <br>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="address">
+            </div>
+
+            <div class="col-md-4">
+              <label for="zip" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="zip" placeholder="00000-000" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit" style="margin-bottom:20px">Cadastrar</button>
+     
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+    <script src="js/cadastro.js"></script>
+    <script src="js/jsglobal.js"></script>
+    <script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+      <script src="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.js"></script>
+</body>
+</html>
+
+
+//para configurar javascript do cep
+//evento de escuta (keyup) no input do cep
+//a função acionada pelo evento key up pegará o conteúdo do input do cep
+//a variável que recebeu o valor do input será colocada na requisição XMLHttp Request abaixo
+function load() {
+  var requisicao = new XMLHttpRequest();
+  requisicao.open("GET", `https://viacep.com.br/ws/${x}/json/`);
+
+  requisicao.send();
+
+  requisicao.onload = function () {
+    if (requisicao.status == 200) {
+      resposta = requisicao.response;
+      responseObj = JSON.parse(resposta);
+      //alerta para teste -->> alert(responseObj.results[0].name.first);
+      document.querySelector("#demo").innerHTML = responseObj.results[0].name.first + " " + responseObj.results[0].name.last; //aqui será trabalhado aonde se colocará o endereço
+    }
+  };  
+}

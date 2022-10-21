@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/planos.css">
+    <link rel="stylesheet" href="css/styleglobal.css">
+    <title>The FrontEnders</title>
+</head>
+<body>
+
+    <header class="cabecalhoCbl">
+
+        <!-- Logo da empresa -->
+        <div class="logoEmpresa">
+            <img src="imagens/The FrontEnders.png" alt="logo da empresa">
+        </div>
+
+        <!-- Imagem hamburgue para abrir o menu lateral -->
+        <div class="imgHamburgue">
+            <img src="imagens/menu.png" alt="Imagem Hamburgue" onclick="openNav()">
+        </div>
+
+        <!-- Menu de navegação do site -->
+        <nav class="navegacaoMenu" id="navegacaoId">
+            
+            <!-- Configuração do JavaScript para o Menu Lateral -->
+            <a href="javascript:void(0)" class="closebtn" id="closebtnId" onclick="closeNav()">&times;</a>
+
+            <a href="index.html">Home</a>
+            <a href="planos.html">Serviços</a>
+            <a href="nossocontato.html">Contato</a>
+            <a href="login.html">Login</a>
+            
+            
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Tabelas de assinatura de Planos</h1>
+
+        <!-- Div Principal que pega os Cards -->
+        <div class="mainPlanos">
+
+            <!-- 1° Card Básico -->
+            <div class="planoBasico">
+                <h4>Plano Básico</h4>
+                <p class="valorR">R$</p>
+                <p class="ValorQuarenta">40,00<br></p>
+                <p class="allmoth"> Todos os meses <br></p>
+                <p class="sevenDays">7 dias grátis para iniciar</p>
+                
+                <div class="comeceAgora">
+                    <button class="buttonClass1"><a href="#cadastro.html"></a>COMEÇAR AGORA</button><br>
+                </div>
+                <div class="explicationBasic">
+                    <p class="tituloBasic">Como funciona o Básico?</p>
+                    <p class="descricaoBasic"> No básico você tem acesso alguns layouts simples, uma ajuda básica para ter uma noção como construir seu layout e fazer um design.</p>
+                </div>
+
+                <a class="sectionBasicB" href="#basicB">Ver Mais</a>
+
+            </div>
+            <!-- Fim do 1° Card Básico -->
+
+            <!-- Início do 2° Card Básico -->
+            <div class="planoVip">
+
+                <h4>Plano Vip</h4>
+                <p class="valorR">R$</p>
+                <p class="ValorQuarenta">80,00<br></p>
+                <p class="allmoth"> Todos os meses <br></p>
+                <p class="sevenDays">Perfeito para iniciantes e para quem já tem experiência</p>
+                
+                <div class="comeceAgora2">
+                    <button class="buttonClass1"><a href="#cadastro.html"></a>COMEÇAR AGORA</button><br>
+                </div>
+                <div class="explicationBasic">
+                    <p class="tituloBasic">Como funciona o Vip?</p>
+                    <p class="descricaoVip"> No Vip você tem todo o acesso de todos os outros planos e MUITO MAIS!
+                        Layouts profissionais com dicas de design para seu projeto e ainda você tem a possibilidade de entrar em chamada de VIDEO conosco!</p>
+                </div>
+
+                <a class="sectionBasicV" href="#vipV">Ver Mais</a>
+
+
+            </div>
+            <!-- Fim do 2° Card Básico -->
+
+            <!-- Início do 3° Card Básico -->
+            <div class="planoIntermediario">
+
+
+
+                <h4>Plano Intermediario</h4>
+                <p class="valorR">R$</p>
+                <p class="ValorQuarenta">60,00<br></p>
+                <p class="allmoth"> Todos os meses <br></p>
+                
+                
+                <div class="comeceAgora3">
+                    <button class="buttonClass1"><a href="#cadastro.html"></a>COMEÇAR AGORA</button><br>
+                </div>
+                <div class="explicationBasic">
+                    <p class="tituloBasic">Como funciona o Intermediário?</p>
+                    <p class="descricaoBasic">Plano intermediário você tem tudo que o básico disponibiliza, porém com acesso ilimitado a todos os layouts e dicas de 
+                        css para mandar ver nos seus projetos!</p>
+                </div>
+
+            </div><br>
+            <!-- Fim do 3° Card Básico -->
+
+        </div>
+
+        <section id="basicB">
+
+            <div class="explDoBasico">
+                <div class="tituloExplDoBasico">Plano Básico<br></div>
+                <div class="descricaoDoservicoB">Acesso a ideias básicas de HTML e CSS, e layouts simples com acesso limitado.</div>
+
+                <div class="example">
+                    <img src="imagens/exampleBasicCel.png" alt="Exemplo Básico">
+                </div>
+                
+            </div>
+
+
+            <div id="vipV">
+                <div class="containerTituloDesc">
+                    <div class="tituloExplDoBasico">Plano Vip<br></div>
+
+                    <div class="descricaoDoservicoB">Acesso ilimitado de HTML e CSS com ideias e layouts profissionais e explicação de como fazer 
+                        para que o programador dê seus primeiros passos.<br>
+                   
+                    </div>
+
+                </div>
+
+                <div class="containerDiv">
+                    
+                    <div class="example2">
+                        <img src="imagens/exampleBasicCel.png" alt="Exemplo Vip">
+                    </div>
+
+                    <div class="chamadaDeVideo">
+                        <div class="explicaVideo">No plano Vip você ainda tem chamada de video para uma ótima orientação de como fazer seus projetos!</div>
+                        <img src="imagens/mulherCel.png" alt="Foto da mulher no computador">
+                    </div>
+
+                </div>
+                
+               
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer></footer>
+
+    <script src="js/jsglobal.js"></script>
+</body>
+</html>
